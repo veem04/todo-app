@@ -2,6 +2,7 @@
 
 @section('content')
     <h2>To-do</h2>
+    <a href='{{ route('todos.create') }}'>Create</a>
     <table>
         <thead>
             <tr>
