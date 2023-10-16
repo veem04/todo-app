@@ -17,14 +17,14 @@
         @csrf
         <div>
             <label>Title</label>
-            <input type='text' name='title' id='title' />
+            <input type='text' name='title' id='title' value='{{ old('title') }}' />
             @if ($errors->has('title'))
                 <span>{{ $errors->first('title') }}</span>
             @endif
         </div>
         <div>
             <label>Description</label>
-            <input type='text' name='body' id='description' />
+            <input type='text' name='body' id='description' value='{{ old('body') }}' />
             @if ($errors->has('body'))
                 <span>{{ $errors->first('body') }}</span>
             @endif
