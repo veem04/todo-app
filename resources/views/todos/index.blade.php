@@ -43,29 +43,10 @@
                         <a href='{{ route('todos.show', $todo->id)}}' class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Read More</a>
                     </td>
                 </tr>
-
                 @empty
                 <h4>No to-dos found.</h4>
-            @endforelse
-                
-                
+                @endforelse
             </tbody>
         </table>
     </div>
-
-
-    <table>
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Snippet</th>
-                <th>Date</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            
-                
-        </tbody>
-    </table>
 @endsection
