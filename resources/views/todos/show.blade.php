@@ -2,7 +2,8 @@
 
 @section('content')
     
-    <h1>Show to-do</h1>
+<div class='dark:text-white m-5'>
+    <h1 class='text-3xl font-bold'>Show to-do</h1>
     
     <p>{{ $todo->title }}</p>
     <p>{{ $todo->body }}</p>
@@ -17,5 +18,5 @@
             <button type='submit'>Delete</button>
         </form>
     </div>
-
+</div>
 @endsection

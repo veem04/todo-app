@@ -8,6 +8,15 @@ use Auth;
 
 class TodoController extends Controller
 {
+    public function getMyTodos()
+    {
+        $todos = Todo::where('user_id', '=', Auth::id())->get();
+        
+        return view('todos.index', [
+            'todos' => $todos,
+        ]);
+    }
+
     /**
      * Display a listing of the resource.
      */
